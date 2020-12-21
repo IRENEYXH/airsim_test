@@ -19,7 +19,7 @@ USER root
 RUN apt-get -y install htop
 
 # 3) install packages
-RUN sudo apt-get install -y build-essential flex libelf-dev libc6-dev-amd64 binutils-dev libdwarf-dev
+RUN sudo apt-get install -y build-essential flex libelf-dev binutils-dev libdwarf-dev
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
