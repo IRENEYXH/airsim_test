@@ -20,7 +20,7 @@ RUN apt-get -y install htop
 
 # 3) install packages
 RUN sudo apt-get update
-RUN sudo apt-get install build-essential llvm
+RUN sudo apt-get install -y build-essential llvm
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
