@@ -19,7 +19,8 @@ USER root
 RUN apt-get -y install htop
 
 # 3) install packages
-RUN sudo apt-get install -y build-essential flex libelf-dev binutils-dev libdwarf-dev
+RUN sudo apt-get update
+RUN sudo apt-get install build-essential llvm
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
